@@ -14,7 +14,7 @@
                 $controller = new $className;
                 $controller->exec();
             }else{
-                die('Controller not found!');
+                die('Page not found!');
             }
         }
 
