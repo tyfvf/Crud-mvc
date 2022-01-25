@@ -2,11 +2,16 @@
 
     namespace controllers;
 
-    class ContactController{
+    class ContactController extends Controller{
+
+        public function __construct()
+        {
+            $this->view = new \Views\ContactView('contact');
+        }
 
         public function exec(){
 
-            echo '<h1>Contact page</h1>';
+            $this->view->render();
 
         }
 
