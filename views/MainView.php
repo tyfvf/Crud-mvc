@@ -9,6 +9,9 @@
         private $header;
         private $footer;
 
+        const title = 'Crud-MVC';
+        public $menuItems = array('Home', 'About us', 'Contact us');
+
         public function __construct($fileName,$header = 'header',$footer = 'footer')
         {
             $this->fileName = $fileName;
