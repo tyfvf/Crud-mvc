@@ -2,10 +2,15 @@
 
     namespace controllers;
 
-    class HomeController{
+    class HomeController extends Controller{
+
+        public function __construct()
+        {
+            $this->view = new \Views\MainView('home');
+        }
 
         public function exec(){
-            echo 'Home!';
+            $this->view->render(array('title' => 'Home'));
         }
 
     }
