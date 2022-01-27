@@ -27,13 +27,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-            <a class="<?php if($url[0] == 'home'){echo 'nav-link active';}else{echo 'nav-link';}?>" aria-current="page" href="<?php if($url[0] == 'home'){echo '#';}else{ echo INCLUDE_PATH.'home';}?>">Home</a>
-            <a class="<?php if($url[0] == 'contact'){echo 'nav-link active';}else{echo 'nav-link';}?>" href="<?php if($url[0] == 'contact'){echo '#';}else{ echo INCLUDE_PATH.'contact';}?>">Contact</a>
-            <a class="<?php if($url[0] == 'about'){echo 'nav-link active';}else{echo 'nav-link';}?>" href="<?php if($url[0] == 'about'){echo '#';}else{ echo INCLUDE_PATH.'about';}?>">About</a>
+            <a class="nav-link" href="">Create</a>
+            <a class="nav-link" href="">Read</a>
+            <a class="nav-link" href="">Update</a>
+            <a class="nav-link" href="">Delete</a>
         </div>
         </div>
-        <span class="navbar-text">
-            <a href="<?php if($url[0] == 'admin'){echo '#';}else{ echo INCLUDE_PATH.'admin';}?>">Admin</a>
-        </span>
+        
+            <a class="logoff" href="<?php echo INCLUDE_PATH;?>">Log off</a>
+        
     </div>
     </nav>
