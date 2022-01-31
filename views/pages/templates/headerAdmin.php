@@ -30,7 +30,7 @@
             <a class="<?php if($url[0] == 'admin' && $url[1] == 'create'){echo 'nav-link active';}else{echo 'nav-link';}?>" href="<?php if($url[0] == 'admin' && $url[1] == 'create'){echo '#';}else{ echo INCLUDE_PATH.'admin/create';}?>">Create</a>
             <a class="<?php if($url[0] == 'admin' && $url[1] == 'read'){echo 'nav-link active';}else{echo 'nav-link';}?>" href="<?php if($url[0] == 'admin' && $url[1] == 'read'){echo '#';}else{ echo INCLUDE_PATH.'admin/read';}?>">Read</a>
             <a class="<?php if($url[0] == 'admin' && $url[1] == 'update'){echo 'nav-link active';}else{echo 'nav-link';}?>" href="<?php if($url[0] == 'admin' && $url[1] == 'update'){echo '#';}else{ echo INCLUDE_PATH.'admin/update';}?>">Update</a>
-            <a class="nav-link" href="">Delete</a>
+            <a class="<?php if($url[0] == 'admin' && $url[1] == 'delete'){echo 'nav-link active';}else{echo 'nav-link';}?>" href="<?php if($url[0] == 'admin' && $url[1] == 'delete'){echo '#';}else{ echo INCLUDE_PATH.'admin/delete';}?>">Delete</a>
         </div>
         </div>
             <a class="logoff" href="<?php echo INCLUDE_PATH;?>">Log off</a>

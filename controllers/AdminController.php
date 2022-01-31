@@ -38,6 +38,11 @@
                 $this->view->render(array('title' => 'Update names'));
             });
 
+            \Router::route('admin/delete', function(){
+                $this->view = new \Views\MainView('admin-delete', 'headerAdmin');
+                $this->view->render(array('title' => 'Delete'));
+            });
+
 
             \Router::route('admin', function(){
                 $this->view = new \Views\MainView('admin');
