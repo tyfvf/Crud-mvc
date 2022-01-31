@@ -8,4 +8,4 @@
 
 ?>
 
-<h1>Welcom admin!</h1>
+<h1>Welcome admin!</h1>

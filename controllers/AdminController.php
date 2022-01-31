@@ -23,6 +23,11 @@
                 $this->view->render(array('title'=>'Welcome admin!'));
             });
 
+            \Router::route('admin/create', function(){
+                $this->view = new \Views\MainView('admin-create','headerAdmin');
+                $this->view->render(array('title'=>'Create imgs'));
+            });
+
 
             \Router::route('admin', function(){
                 $this->view = new \Views\MainView('admin');
