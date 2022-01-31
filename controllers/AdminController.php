@@ -33,6 +33,11 @@
                 $this->view->render(array('title'=>'All images'));
             });
 
+            \Router::route('admin/update', function(){
+                $this->view = new \Views\MainView('admin-update', 'headerAdmin');
+                $this->view->render(array('title' => 'Update names'));
+            });
+
 
             \Router::route('admin', function(){
                 $this->view = new \Views\MainView('admin');

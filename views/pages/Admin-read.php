@@ -23,7 +23,7 @@
         <tbody>
             <?php foreach($fetch as $key => $value) : ?>
             <tr>
-                <td><img height="200" width="200" class="img-fluid img-thumbnail" src="<?php echo INCLUDE_PATH.$value['path']; ?>"></td>
+                <td><img width="200" class="img-fluid img-thumbnail" src="<?php echo INCLUDE_PATH.$value['path']; ?>"></td>
                 <td><a target="_blank" href="<?php echo INCLUDE_PATH.$value['path']; ?>"><?php echo $value['name']; ?></a></td>
                 <td><?php echo date('d/m/Y H:i', strtotime($value['upload_datetime'])) ?></td>
             </tr>
