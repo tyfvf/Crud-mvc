@@ -28,6 +28,11 @@
                 $this->view->render(array('title'=>'Create imgs'));
             });
 
+            \Router::route('admin/read', function(){
+                $this->view = new \Views\MainView('admin-read','headerAdmin');
+                $this->view->render(array('title'=>'All images'));
+            });
+
 
             \Router::route('admin', function(){
                 $this->view = new \Views\MainView('admin');

@@ -1,7 +1,7 @@
 <footer>
-    <div class="position-absolute bottom-0 start-50 translate-middle-x">
+    <p>
         All rights reserved
-    </div>
+    </p>
 </footer>
 
 </body>

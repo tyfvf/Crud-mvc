@@ -27,8 +27,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-            <a class="<?php if($url[0] == 'admin' && $url[1] == 'create'){echo 'nav-link active';}else{echo 'nav-link';}?>" href="<?php if($url[0] == 'admin/create' && $url[1] == 'create'){echo '#';}else{ echo INCLUDE_PATH.'admin/create';}?>">Create</a>
-            <a class="nav-link" href="">Read</a>
+            <a class="<?php if($url[0] == 'admin' && $url[1] == 'create'){echo 'nav-link active';}else{echo 'nav-link';}?>" href="<?php if($url[0] == 'admin' && $url[1] == 'create'){echo '#';}else{ echo INCLUDE_PATH.'admin/create';}?>">Create</a>
+            <a class="<?php if($url[0] == 'admin' && $url[1] == 'read'){echo 'nav-link active';}else{echo 'nav-link';}?>" href="<?php if($url[0] == 'admin' && $url[1] == 'read'){echo '#';}else{ echo INCLUDE_PATH.'admin/read';}?>">Read</a>
             <a class="nav-link" href="">Update</a>
             <a class="nav-link" href="">Delete</a>
         </div>
