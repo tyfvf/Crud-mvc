@@ -28,6 +28,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             <a class="<?php if($url[0] == 'home'){echo 'nav-link active';}else{echo 'nav-link';}?>" aria-current="page" href="<?php if($url[0] == 'home'){echo '#';}else{ echo INCLUDE_PATH.'home';}?>">Home</a>
+            <a class="<?php if($url[0] == 'signin'){echo 'nav-link active';}else{echo 'nav-link';}?>" aria-current="page" href="<?php if($url[0] == 'sigin'){echo '#';}else{ echo INCLUDE_PATH.'signin';}?>">Sign in</a>
             <a class="<?php if($url[0] == 'contact'){echo 'nav-link active';}else{echo 'nav-link';}?>" href="<?php if($url[0] == 'contact'){echo '#';}else{ echo INCLUDE_PATH.'contact';}?>">Contact</a>
             <a class="<?php if($url[0] == 'about'){echo 'nav-link active';}else{echo 'nav-link';}?>" href="<?php if($url[0] == 'about'){echo '#';}else{ echo INCLUDE_PATH.'about';}?>">About</a>
         </div>
