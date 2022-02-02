@@ -18,6 +18,13 @@
                 }
             }
 
+            if(isset($_FILES['file'])){
+                $files = $_FILES['file'];
+
+                \models\AdminModel::create($files);
+
+            }
+
             \Router::route('admin/login', function(){
                 $this->view = new \Views\MainView('admin-login','headerAdmin');
                 $this->view->render(array('title'=>'Welcome admin!'));

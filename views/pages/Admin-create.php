@@ -7,41 +7,6 @@
         die();
     }
 
-    if(isset($_FILES['file'])){
-        $files = $_FILES['file'];
-
-        if($files['error']){
-            die('Error, please try again');
-        }
-
-        if($files['size'] > 2097152){
-            die('Please upload only images with 2mb or lower');
-        }
-
-        $directory = 'images/';
-        $fileName = $files['name'];
-        $fileNewName = uniqid();
-        $extension = strtolower(pathinfo($fileName, PATHINFO_EXTENSION));
-
-        if($extension != 'jpg' && $extension != 'png' ){
-            die('Plese be kind and upload only images (jpg and png), security purposes :D');
-        }
-
-        $path = $directory . $fileNewName . "." . $extension;
-
-        $ok = move_uploaded_file($files['tmp_name'], $path);
-
-        if($ok){
-            $upload = \MySql::connect()->prepare("INSERT INTO images (name, path) VALUES ('$fileName', '$path')");
-            $upload->execute();
-
-            echo '<script>alert("Created new image!")</script>';
-        }else{
-            echo '<script>alert("Error, please try again")</script>';
-        }
-    }
-
-
 ?>
 
 <div class="title">

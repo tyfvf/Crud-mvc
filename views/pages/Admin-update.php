@@ -34,17 +34,8 @@
                 $newName = $_POST[$value['id']];
                 $id = $value['id'];
         
-                $update = \MySql::connect()->prepare("UPDATE `images` SET name='$newName' WHERE id='$id'");
-                
-                if($update->execute()){
-                    echo '<script>alert("Name changed with sucess!!")</script>';
-                    echo '<script>location.href="'.INCLUDE_PATH.'/admin/update"</script>';
-                    die();
-                }else{
-                    echo '<script>alert("Failed to change name, please try again!")</script>';
-                }
-
-                
+                \models\AdminModel::update($newName, $id);
+              
             }    
             endforeach; 
             ?>

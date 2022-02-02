@@ -30,18 +30,10 @@
             if(isset($_POST[$value['id']])){
 
                 $id = $value['id'];
-        
-                $delete = \MySql::connect()->prepare("DELETE FROM `images` WHERE id='$id'");
-                
-                if($delete->execute()){
-                    echo '<script>alert("DELETED FROM DATABASE!")</script>';
-                    echo '<script>location.href="'.INCLUDE_PATH.'/admin/delete"</script>';
-                    die();
-                }else{
-                    echo '<script>alert("Failed to change name, please try again!")</script>';
-                }
+                $path = $value['path'];
 
-                
+                \models\AdminModel::delete($id, $path);
+
             }    
             endforeach; 
             ?>
