@@ -7,4 +7,4 @@
 
 ?>
 
-<h1 class="position-absolute top-50 start-50 translate-middle">Welcome <?php echo $_SESSION['name']?>!</h1>
+<h1><?php echo $arr['title']; ?></h1>

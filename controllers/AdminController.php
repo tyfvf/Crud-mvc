@@ -2,6 +2,10 @@
 
     namespace controllers;
 
+    if(session_start() == null){
+        session_start();
+    }
+
     class AdminController extends Controller{
 
         public function exec()

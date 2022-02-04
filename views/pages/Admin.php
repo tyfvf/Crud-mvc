@@ -1,7 +1,5 @@
 <?php 
 
-    session_start();
-
     if(isset($_SESSION['login'])){
         echo '<script>location.href="'.INCLUDE_PATH.'admin/login"</script>';
         die();

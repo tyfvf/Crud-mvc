@@ -36,3 +36,7 @@ span > a{
 .logoff:hover{
     color: rgb(255, 38, 38);
 }
+
+.pic{
+    float: left;
+}
