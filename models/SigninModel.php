@@ -15,7 +15,11 @@
 
                 echo '<script>alert("This login already exists, please select another one!")</script>';
 
-            }elseif($newPassword != $newPasswordC){
+            }
+            elseif($newLogin == 'none'){
+                echo '<script>alert("This login already exists, please select another one!")</script>';
+            }
+            elseif($newPassword != $newPasswordC){
 
                 echo '<script>alert("Please make sure to confirm the same password in the inputs")</script>';
 

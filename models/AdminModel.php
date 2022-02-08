@@ -11,7 +11,6 @@
             $auth->fetchAll();
 
             if($auth->rowCount() == 1){
-                session_start();
                 $_SESSION['login'] = true;
 
                 return true;
