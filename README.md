@@ -8,3 +8,11 @@ Let me show some examples:
 ## The site (very bland i know)
 
 ## Creating a new account
+
+## Seeing user profile, IMGs and Market
+
+## Changing user profile pic
+
+## Getting a IMG and seeing collection
+
+## Seeing admin part
