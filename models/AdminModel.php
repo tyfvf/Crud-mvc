@@ -74,7 +74,7 @@
                 echo '<script>location.href="'.INCLUDE_PATH.'/admin/delete"</script>';
                 die();
             }else{
-                echo '<script>alert("Failed to change name, please try again!")</script>';
+                echo '<script>alert("Failed to delete, please try again!")</script>';
             }
         }
 

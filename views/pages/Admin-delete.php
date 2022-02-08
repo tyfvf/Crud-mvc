@@ -12,7 +12,7 @@
 ?>
 
 <div class="container">
-    <h1 class="title">Delete an image :(</h1>
+    <h1 class="title">Delete an IMG :(</h1>
     <table class="table">
         <thead>
             <th>Image</th>

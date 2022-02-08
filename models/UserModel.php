@@ -43,6 +43,22 @@
             }
         }
 
+        public static function addCollection($id, $login){
+
+            $number = \MySql::connect()->prepare("UPDATE `user` SET `numberIMGS` = `numberIMGS` + 1 WHERE `login` = ?");
+
+            $sql = \MySql::connect()->prepare("UPDATE `images` SET `owner` = ? WHERE `id` = ?");
+
+            if($sql->execute(array($login, $id)) && $number->execute(array($login))){
+                echo '<script>alert("IMG added to your collection!")</script>';
+                echo '<script>location.href="'.INCLUDE_PATH.'/user/market"</script>';
+                die();
+            }else{
+                echo '<script>alert("Error, please try again!")</script>';
+            }
+
+        }
+
     }
 
 

@@ -8,7 +8,7 @@
 ?>
 
 <div class="title">
-    <h2>Make a new Image!</h2>
+    <h2>Make a new IMG!</h2>
 </div>
 
 <div class="position-absolute top-50 start-50 translate-middle">

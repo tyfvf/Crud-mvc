@@ -11,12 +11,13 @@
 ?>
 
 <div class="container">
-    <h1 class="title">All images in the database!</h1>
+    <h1 class="title">All IMGs in the database!</h1>
     <table class="table">
         <thead>
             <th>Preview</th>
             <th>File name</th>
             <th>Upload Date</th>
+            <th>Owner Login</th>
         </thead>
         <tbody>
             <?php foreach($fetch as $key => $value) : ?>
@@ -24,6 +25,7 @@
                 <td><img width="200" class="img-fluid img-thumbnail" src="<?php echo INCLUDE_PATH.$value['path']; ?>"></td>
                 <td><a target="_blank" href="<?php echo INCLUDE_PATH.$value['path']; ?>"><?php echo $value['name']; ?></a></td>
                 <td><?php echo date('d/m/Y H:i', strtotime($value['upload_datetime'])) ?></td>
+                <td><?php echo $value['owner'] ?></td>
             </tr>
             <?php endforeach; ?>
         </tbody>
