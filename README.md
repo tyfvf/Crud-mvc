@@ -27,7 +27,7 @@ https://user-images.githubusercontent.com/75546113/153091159-b6242575-5e50-4a1b-
 
 ## Seeing admin part
 
-https://user-images.githubusercontent.com/75546113/153091201-e7c5719d-8ff0-4a6a-b221-9ba17d6decd7.mp4
+https://user-images.githubusercontent.com/75546113/153092308-85f42773-3a7a-4aa0-81de-f5d4c2b70848.mp4
 
 ## Creating a new IMG
 
