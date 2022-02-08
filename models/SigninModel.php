@@ -21,7 +21,7 @@
 
             }else{
 
-                $register = \MySql::connect()->prepare("INSERT INTO `user` VALUES (null,?,?)");
+                $register = \MySql::connect()->prepare("INSERT INTO `user` VALUES (null,?,?,DEFAULT,DEFAULT)");
                 $register->execute(array($newLogin, $newPassword));
 
                 echo '<script>alert("Account created with sucess!")</script>';
